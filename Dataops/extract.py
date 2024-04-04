@@ -1,7 +1,7 @@
 from googleapiclient.discovery import build
 
 def fetch_youtube_data():
-    api_key = 'AIzaSyCb5fsXkz_8Sizg1L2xHTI40ME7lfeXSvY'
+    api_key = 'your_youtube_API'
     youtube = build('youtube', 'v3', developerKey=api_key)
 
     request = youtube.search().list(
